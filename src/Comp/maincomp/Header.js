@@ -38,11 +38,11 @@ const Header = () => {
                 {/* ***** Menu Start ***** */}
                 <ul className="nav">
                   <li className="scroll-to-section"><a href="#top" className="active">Home</a></li>
-                  <li className="scroll-to-section"><a href="#about">About</a></li>
-                  <li className="scroll-to-section"><a href="#services">Services</a></li>
-                  <li className="scroll-to-section"><a href="#portfolio">Projects</a></li>
-                  <li className="scroll-to-section"><a href="#blog">Blog</a></li>
-                  <li className="scroll-to-section"><a href="#contact">Contact</a></li>
+                  <li className="scroll-to-section"><a href="/about">About</a></li>
+                  <li className="scroll-to-section"><a href="/services">Services</a></li>
+                  <li className="scroll-to-section"><a href="/projects">Projects</a></li>
+                  <li className="scroll-to-section"><a href="/blog">Blog</a></li>
+                  <li className="scroll-to-section"><a href="/contact">Contact</a></li>
                   <li className="scroll-to-section"><div className="border-first-button"><a href="#contact">Free Quote</a></div></li>
                 </ul>
                 <a className="menu-trigger">

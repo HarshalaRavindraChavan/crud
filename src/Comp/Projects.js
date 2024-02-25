@@ -3,7 +3,7 @@ import React from 'react'
 const Projects = () => {
   return (
     <div>
-   <div id="portfolio" className="our-portfolio section">
+ <div id="portfolio" className="our-portfolio section">
   <div className="container">
     <div className="row">
       <div className="col-lg-5">
@@ -89,6 +89,7 @@ const Projects = () => {
     </div>
   </div>
 </div>
+
 
     </div>
   )
