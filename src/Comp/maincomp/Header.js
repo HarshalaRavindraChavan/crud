@@ -5,7 +5,7 @@ const Header = () => {
     <div >
 
 
-      <div className="pre-header">
+      <div className="pre-header" >
         <div className="container">
           <div className="row">
             <div className="col-lg-8 col-sm-8 col-7">
@@ -25,7 +25,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <header className="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+      <header className="header-area header-sticky  slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -37,7 +37,7 @@ const Header = () => {
                 {/* ***** Logo End ***** */}
                 {/* ***** Menu Start ***** */}
                 <ul className="nav">
-                  <li className="scroll-to-section"><a href="#top" className="active">Home</a></li>
+                  <li className="scroll-to-section"><a href="/" className="active">Home</a></li>
                   <li className="scroll-to-section"><a href="/about">About</a></li>
                   <li className="scroll-to-section"><a href="/services">Services</a></li>
                   <li className="scroll-to-section"><a href="/projects">Projects</a></li>

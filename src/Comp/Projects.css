@@ -1,0 +1,13 @@
+/* Projects.css */
+
+/* Add space between slides */
+.custom-slider .slick-slide {
+    margin-right: 15px; /* Adjust the margin as needed */
+  }
+  
+  /* Override default slider styles */
+  .custom-slider .slick-prev,
+  .custom-slider .slick-next {
+    color: black; /* Change the color of navigation buttons */
+  }
+  

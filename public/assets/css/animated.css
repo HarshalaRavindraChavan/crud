@@ -3156,3 +3156,60 @@ Copyright (c) 2014 Daniel Eden
   -webkit-animation-name: slideOutUp;
           animation-name: slideOutUp;
 }
+
+
+
+
+/* <h2>FIRSTPAGECSS<h2> */
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Apply the animation to the element */
+.header-text.fadeInLeft {
+  animation: fadeInLeft 1s ease both;
+}
+
+
+/* <h1>imagecss<h1> */
+.right-image {
+  opacity: 0; /* Initially make the content invisible */
+}
+
+/* Define the animation */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px); /* Move content 50px up */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Move content back to its original position */
+  }
+}
+
+/* Apply the animation to the right-image class */
+.right-image.wow.fadeInDown {
+  animation: fadeInDown 1s ease 0.5s forwards; /* Play the animation after 0.5 seconds delay */
+}
+
+
+
+/* <h2>ABOUTUSPAGECSS<H2> */
+
+.about-left-image {
+  opacity: 0; /* Initially hide the image */
+  transition: opacity 0.5s ease-in-out; /* Add smooth transition effect */
+}
+
+.about-left-image.fadeInLeft {
+  opacity: 1; /* Show the image with full opacity */
+}
