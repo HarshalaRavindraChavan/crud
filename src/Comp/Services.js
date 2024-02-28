@@ -6,7 +6,7 @@ const Services = () => {
     
     <div className="page-content">
       Services
-      <div id="about">
+      <div id="about" className="about section">
       <div id="services" className="services section">
         <div className="container" >
           <div className="row">
@@ -28,7 +28,7 @@ const Services = () => {
                 <div className="grid" >
                   <div className="row" >
                     <div className="col-lg-12 mb-5" >
-                      <div className="menu d-flex" >
+                      <div className="menu " >
                         <div className={liitem == 1 ? "active" : ""}>
                         <div
                           className="thumb"
