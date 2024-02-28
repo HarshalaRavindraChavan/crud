@@ -26,19 +26,19 @@ const Projects = () => {
 
   const slides = [
     {
-      url: "http://127.0.0.1:5500/assets/images/portfolio-01.jpg",
+      url: "assets/images/portfolio-01.jpg",
       alt: "Slide 1",
     },
     {
-      url: "http://127.0.0.1:5500/assets/images/portfolio-02.jpg",
+      url: "assets/images/portfolio-02.jpg",
       alt: "Slide 2",
     },
     {
-      url: "http://127.0.0.1:5500/assets/images/portfolio-03.jpg",
+      url: "assets/images/portfolio-03.jpg",
       alt: "Slide 3",
     },
     {
-      url: "http://127.0.0.1:5500/assets/images/portfolio-04.jpg",
+      url: "assets/images/portfolio-04.jpg",
       alt: "Slide 4",
     },
   ];
@@ -51,6 +51,26 @@ const Projects = () => {
     slidesToScroll: 1,
     nextArrow: <CustomNextArrow />,
     prevArrow: <CustomPrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      }
+    ]
   };
 
   return (
@@ -77,11 +97,12 @@ const Projects = () => {
       <div className="row ">
         <Slider {...settings}>
           {slides.map((slide, index) => (
-            <div key={index} className="slide-item">
+            <div key={index}  className=" slide-item">
               <a href="#">
-                <div className="portfolio-item">
+                <div className="portfolio-item ">
                   <div className="thumb">
                     <img
+                    className="img-fluid"
                       src={slide.url}
                       alt={slide.alt}
                       style={{ height: "330px", width: "401px" }}
