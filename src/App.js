@@ -7,7 +7,6 @@ import About from './Comp/About';
 import Services from './Comp/Services';
 import Projects from './Comp/Projects';
 import Header from './Comp/maincomp/Header';
-import Footer from './Comp/maincomp/Footer';
 import Blog from './Comp/Blog';
 import Contact from './Comp/Contact';
 
@@ -21,9 +20,10 @@ function App() {
           <Route path='/about' element={<Master Rcf={About} />}></Route>
           <Route path='/services' element={<Master Rcf={Services} />}></Route>
           <Route path='/projects' element={<Master Rcf={Projects} />}></Route>
-          {/* <Route path='/footer' element={<Master Rcf={Footer} />}></Route> */}
           <Route path='/blog' element={<Master Rcf={Blog} />}></Route>
           <Route path='/contact' element={<Master Rcf={Contact} />}></Route>
+         
+
         </Routes>
       </BrowserRouter>
     </div>
